@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Maria",
+      "password": "maria12345",
+      "gender": "F",
+      "dateOfBirth": "1996-01-01",
+      "email": "maria@gmail.com",
+      "mobileNumber": 1234567890,
+      "pincode": 123456,
+      "city": "Bangalore",
+      "state": "Karnataka",
+      "country": "India"
+    },
+    {
+      "id": "489c",
+      "name": "Razique Mundakundil",
+      "password": "razi123",
+      "gender": "M",
+      "dateOfBirth": "2000-07-24",
+      "email": "mkrazique@gmail.com",
+      "mobileNumber": "6282573528",
+      "pincode": "671310",
+      "city": "Kannur",
+      "state": "Kerala",
+      "country": "Indian"
+    }
+  ],
+  "coaches": [
+    {
+      "id": "1",
+      "name": "Rose",
+      "password": "rose12345",
+      "gender": "F",
+      "dateOfBirth": "1996-01-01",
+      "mobileNumber": 1234567890,
+      "speciality": "Confidence Issues"
+    },
+    {
+      "id": "5cd1",
+      "name": "Razique Mundakundil",
+      "password": "efrefwegrg",
+      "dateOfBirth": "",
+      "gender": "male",
+      "mobileNumber": "",
+      "speciality": "psychology",
+      "mobile": "0628257352",
+      "dob": "2000-01-01"
+    }
+  ],
+  "bookings": [
+    {
+      "appointmentDate": "2020-09-24",
+      "slot": "10 AM to 11 AM",
+      "userId": 1,
+      "coachId": "1",
+      "id": "1"
+    }
+  ]
+}
