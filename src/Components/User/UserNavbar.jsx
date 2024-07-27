@@ -17,7 +17,7 @@ const UserNavbar = () => {
         >
           View Profile
         </Link>
-        <Link to="/userhome/userappointments" className="text-white text-decoration-none mx-3">
+        <Link to="/userhome/userschedules" className="text-white text-decoration-none mx-3">
           My Appointments
         </Link>
 

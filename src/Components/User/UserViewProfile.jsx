@@ -6,17 +6,18 @@ const UserViewProfile = () => {
   const { userDetails } = useOutletContext();
 
   return (
-    <div className='flex justify-between items-center bg-black text-white p-5'>
+    <div className='flex justify-between items-center bg-black text-white p-5 m-5'>
       <div>
         <img src={person} alt="" className='h-40' />
       </div>
 
-      {userDetails ? (
-        <div className='bg-grey'>
-          <p>User Id: {userDetails.id}</p>
-          <p>Date of Birth: {userDetails.dateOfBirth}</p>
+      {userDetails? (
+        <div className='bg-grey' key={userDetails.id}>
+          <p>User Id: {userDetails.name}</p>
+          <p>Date of Birth: {userDetails.email}</p>
           <p>Mobile No: {userDetails.mobileNumber}</p>
-          <p>Speciality: {userDetails.speciality}</p>
+          <p>Speciality: {userDetails.address}</p>
+          <p>Pincode : {userDetails.pincode}</p>
         </div>
       ) : (
         <div>Loading user details...</div>

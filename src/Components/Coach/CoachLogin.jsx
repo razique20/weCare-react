@@ -22,7 +22,10 @@ const CoachLogin = () => {
         }
       });
 
-      if (response.data.length > 0) {
+      const coach = response.data[0];
+
+
+      if (coach && coach.password === password) {
         alert('Login Successfully');
         navigate(`/coachhome/${coachId}`); // Redirect to CoachHome with coachId
       } else {

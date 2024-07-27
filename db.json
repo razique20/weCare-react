@@ -56,6 +56,13 @@
       "userId": 1,
       "coachId": "1",
       "id": "1"
+    },
+    {
+      "appointmentDate": "2020-09-24",
+      "slot": "10 AM to 11 AM",
+      "userId": 1,
+      "coachId": "1",
+      "id": "2"
     }
   ]
 }

@@ -7,10 +7,10 @@ const CoachSchedules = () => {
   console.log('Appointments:', appointments);
 
   return (
-    <div className='flex flex-col justify-between items-center bg-black text-white p-5 m-8 w-90'>
+    <div className='grid grid-cols-3 gap-2  text-white p-5 m-8 w-90 '>
       {appointments && appointments.length > 0 ? (
         appointments.map(appointment => (
-          <div key={appointment.id} className='flex flex-col justify-center items-center '>
+          <div key={appointment.id} className='flex flex-col justify-center items-center my-2 bg-black p-3 text-center'>
             <p className='text-2xl'>Appointment Date: </p>
             <p>{appointment.appointmentDate}</p>
             <p className='text-xl'>Slot: {appointment.slot}</p>

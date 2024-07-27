@@ -21,6 +21,9 @@ function App() {
   const isCoachRoute = location.pathname.startsWith("/coachhome");
   const isUserRoute = location.pathname.startsWith("/user");
 
+
+  
+
   return (
     <div className="bg-slate-100 min-h-screen max-w-screen-lg mx-auto flex flex-col">
       {isCoachRoute ? (
@@ -43,8 +46,10 @@ function App() {
             <Route path="coachschedules" element={<CoachSchedules />} />
             <Route path="coachviewprofile" element={<CoachViewProfile />} />
           </Route>
+          <Route path="userhome/:userId" element={<UserHome />}/>
 
-          <Route path="userhome/:userId" element={<UserHome />}>
+
+          <Route path="userhome" element={<UserHome />}>
             <Route path="userviewprofile" element={<UserViewProfile />} />
             <Route path="userschedules" element={<UserSchedule />} />
           </Route>
